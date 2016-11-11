@@ -1,0 +1,131 @@
+/*else
+    {
+        int allEqualOn = 1;
+        //DDRB |= 0b00000010;
+        uint8_t OnVal = PINB & 0x80; /// mask ONKEY
+        for (idx = 0 ; idx < DEBOUNCE_CYCLES - 1; ++idx)
+        {
+            allEqualOn &= (OnVal == debouncingOn[idx][0]);
+            debouncingOn[idx][0] = debouncingOn[idx+1][0];
+
+        }
+        allEqualOn &= (OnVal == debouncingOn[idx][0]);
+        debouncingOn[idx][0] = OnVal;
+
+
+        uint8_t changedKeyOn = keyStateOn[0] ^ OnVal;
+        if(count1 == 0)
+        {
+            changedKeyOn = 0;
+            count1++;
+        }
+        //allEqual = 1;
+        //changedKeys = 1;
+        keyStateOn[0] = OnVal; //falsche Position
+        if(allEqualOn && changedKeyOn)
+        {
+            PORTC = PWRLED;
+            if((~OnVal&0x01) && (changedOn&0x01))
+            {
+                state = STATE_SEND_KEY;
+                PORTC = PWRLED;
+
+                keybuild = (ScanCode[9][0]);//A5
+            }
+        }
+    }*/
+	
+	
+	
+	
+	#define VBAT 3
+#define ROWS 10
+#define DEBOUNCE_CYCLES 9
+uint16_t activeRow = 0x01;
+uint8_t activeRowIdx = 0;
+uint8_t keyStates[ROWS];
+uint8_t keyStateOn[1];
+uint8_t debouncing[DEBOUNCE_CYCLES][ROWS];
+uint8_t debouncingOn[DEBOUNCE_CYCLES][1];
+uint8_t changedOn = 0;
+
+int isrFlag = 0;
+int count = 0;
+int count1 = 0;
+
+    /*else if(!(PINB&0x80))
+            {
+
+            state = STATE_SEND_KEY;
+            PORTC = PWRLED;
+
+            keybuild = (ScanCode[9][0]);//A0
+            }*/
+			
+			
+			    /*else if(!(PINB&0x80))
+            {
+
+            state = STATE_SEND_KEY;
+            PORTC = PWRLED;
+
+            keybuild = (ScanCode[9][0]);//A0
+            }*/
+    /*else
+    {
+        uint8_t debouncingOn[DEBOUNCE_CYCLES][1];
+        uint8_t changedOn = 0
+        int allEqualOn = 1;
+        uint8_t keyStateOn[1];
+        //DDRB |= 0b00000010;
+        uint8_t OnVal = PINB & 0x80; /// mask ONKEY
+        for (idx = 0 ; idx < DEBOUNCE_CYCLES - 1; ++idx)
+        {
+            allEqualOn &= (OnVal == debouncingOn[idx][0]);
+            debouncingOn[idx][0] = debouncingOn[idx+1][0];
+
+        }
+        allEqualOn &= (OnVal == debouncingOn[idx][0]);
+        debouncingOn[idx][0] = OnVal;
+
+
+        uint8_t changedKeyOn = keyStateOn[0] ^ OnVal;
+        if(count1 == 0)
+        {
+            changedKeyOn = 0;
+            count1++;
+        }
+        //allEqual = 1;
+        //changedKeys = 1;
+        keyStateOn[0] = OnVal; //falsche Position
+        if(allEqualOn && changedKeyOn)
+        {
+            PORTC = PWRLED;
+            if((~OnVal&0x01) && (changedOn&0x01))
+            {
+                state = STATE_SEND_KEY;
+                PORTC = PWRLED;
+
+                keybuild = (ScanCode[9][0]);//A5
+            }
+        }
+    }*/
+	
+	
+	  else
+    {
+     if((PINB&0x80)==0)
+            {
+
+            state = STATE_SEND_KEY;
+            PORTC = PWRLED;
+
+            keybuild = (ScanCode[9][0]);//A0
+            }
+    }
+	
+	
+	DDRB  |= 0b00000010;
+    PORTB &= 0b00000000;
+	
+	

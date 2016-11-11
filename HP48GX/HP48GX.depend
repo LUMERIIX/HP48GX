@@ -1,0 +1,354 @@
+# depslib dependency file v1.0
+1472127191 source:c:\data\hp48gx_1\hp48gx\fuse.c
+	<avr/io.h>
+
+1474459329 source:c:\data\hp48gx_1\hp48gx\main.c
+	<avr/io.h>
+	<util/delay.h>
+	<math.h>
+	"usbconfig.h"
+	"usbdrv/usbdrv.h"
+	<avr/wdt.h>
+	<avr/interrupt.h>
+	<stddef.h>
+	<stdint.h>
+
+1473425722 c:\data\hp48gx_1\hp48gx\usbconfig.h
+
+1472717516 source:c:\data\hp48gx_1\hp48gx\usbdrv\usbdrv.c
+	"usbportability.h"
+	"usbdrv.h"
+	"oddebug.h"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbportability.h
+	<ioavr.h>
+	<inavr.h>
+	<io.h>
+	<delay.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+
+1472717505 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrv.h
+	"usbconfig.h"
+	"usbportability.h"
+
+1338498184 c:\data\hp48gx_1\hp48gx\usbdrv\usbconfig.h
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\oddebug.h
+	"usbportability.h"
+
+1354792592 source:c:\data\hp48gx_1\hp48gx\usbdrv\oddebug.c
+	"oddebug.h"
+
+1472130791 source:c:\data\hp48gx\fuse.c
+	<avr/io.h>
+
+1354792592 source:c:\data\hp48gx\usbdrv\oddebug.c
+	"oddebug.h"
+
+1354792592 c:\data\hp48gx\usbdrv\oddebug.h
+	"usbportability.h"
+
+1354792592 c:\data\hp48gx\usbdrv\usbportability.h
+	<ioavr.h>
+	<inavr.h>
+	<io.h>
+	<delay.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+
+1354792592 source:c:\data\hp48gx\usbdrv\usbdrv.c
+	"usbdrv.h"
+	"oddebug.h"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrv.h
+	"usbconfig.h"
+	"usbportability.h"
+
+1472590750 c:\data\hp48gx\usbconfig.h
+
+1354792592 source:c:\data\hp48gx\usbdrv\usbdrvasm.s
+	"usbportability.h"
+	"usbdrv.h"
+	"usbdrvasm18-crc.inc"
+	"usbdrvasm12.inc"
+	"usbdrvasm128.inc"
+	"usbdrvasm15.inc"
+	"usbdrvasm16.inc"
+	"usbdrvasm165.inc"
+	"usbdrvasm20.inc"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm18-crc.inc
+	"asmcommon.inc"
+	<stdio.h>
+
+1354792592 c:\data\hp48gx\usbdrv\asmcommon.inc
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm12.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm128.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm15.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm16.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm165.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx\usbdrv\usbdrvasm20.inc
+	"asmcommon.inc"
+
+1472717529 source:c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm.s
+	"usbportability.h"
+	"usbdrv.h"
+	"usbdrvasm18-crc.inc"
+	"usbdrvasm12.inc"
+	"usbdrvasm128.inc"
+	"usbdrvasm15.inc"
+	"usbdrvasm16.inc"
+	"usbdrvasm165.inc"
+	"usbdrvasm20.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm18-crc.inc
+	"asmcommon.inc"
+	<stdio.h>
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\asmcommon.inc
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm12.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm128.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm15.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm16.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm165.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm20.inc
+	"asmcommon.inc"
+
+1472127191 source:c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\fuse.c
+	<avr/io.h>
+
+1354792592 source:c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\oddebug.c
+	"oddebug.h"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\oddebug.h
+	"usbportability.h"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbportability.h
+	<ioavr.h>
+	<inavr.h>
+	<io.h>
+	<delay.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+
+1472717516 source:c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrv.c
+	"usbportability.h"
+	"usbdrv.h"
+	"oddebug.h"
+
+1472717505 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrv.h
+	"usbconfig.h"
+	"usbportability.h"
+
+1338498184 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbconfig.h
+
+1472717529 source:c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm.s
+	"usbportability.h"
+	"usbdrv.h"
+	"usbdrvasm18-crc.inc"
+	"usbdrvasm12.inc"
+	"usbdrvasm128.inc"
+	"usbdrvasm15.inc"
+	"usbdrvasm16.inc"
+	"usbdrvasm165.inc"
+	"usbdrvasm20.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm18-crc.inc
+	"asmcommon.inc"
+	<stdio.h>
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\asmcommon.inc
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm12.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm128.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm15.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm16.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm165.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\usbdrv\usbdrvasm20.inc
+	"asmcommon.inc"
+
+1472127191 source:c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\fuse.c
+	<avr/io.h>
+
+1474533783 source:c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\main.c
+	<avr/io.h>
+	<util/delay.h>
+	<math.h>
+	"usbconfig.h"
+	"usbdrv/usbdrv.h"
+	<avr/wdt.h>
+	<avr/interrupt.h>
+	<stddef.h>
+	<stdint.h>
+
+1474468778 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbconfig.h
+
+1472717505 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrv.h
+	"usbconfig.h"
+	"usbportability.h"
+
+1338498184 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbconfig.h
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbportability.h
+	<ioavr.h>
+	<inavr.h>
+	<io.h>
+	<delay.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+
+1354792592 source:c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\oddebug.c
+	"oddebug.h"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\oddebug.h
+	"usbportability.h"
+
+1472717516 source:c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrv.c
+	"usbportability.h"
+	"usbdrv.h"
+	"oddebug.h"
+
+1472717529 source:c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm.s
+	"usbportability.h"
+	"usbdrv.h"
+	"usbdrvasm18-crc.inc"
+	"usbdrvasm12.inc"
+	"usbdrvasm128.inc"
+	"usbdrvasm15.inc"
+	"usbdrvasm16.inc"
+	"usbdrvasm165.inc"
+	"usbdrvasm20.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm18-crc.inc
+	"asmcommon.inc"
+	<stdio.h>
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\asmcommon.inc
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm12.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm128.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm15.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm16.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm165.inc
+	"asmcommon.inc"
+
+1354792592 c:\data\hp48gx_1\hp48gxnothingworksonkeyonportb\usbdrv\usbdrvasm20.inc
+	"asmcommon.inc"
+
+1472123591 source:c:\data\hp48gx_1\hp48gx_allworks\fuse.c
+	<avr/io.h>
+
+1354788992 source:c:\data\hp48gx_1\hp48gx_allworks\usbdrv\oddebug.c
+	"oddebug.h"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\oddebug.h
+	"usbportability.h"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbportability.h
+	<ioavr.h>
+	<inavr.h>
+	<io.h>
+	<delay.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+
+1472713916 source:c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrv.c
+	"usbportability.h"
+	"usbdrv.h"
+	"oddebug.h"
+
+1472713905 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrv.h
+	"usbconfig.h"
+	"usbportability.h"
+
+1338494584 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbconfig.h
+
+1472713929 source:c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm.s
+	"usbportability.h"
+	"usbdrv.h"
+	"usbdrvasm18-crc.inc"
+	"usbdrvasm12.inc"
+	"usbdrvasm128.inc"
+	"usbdrvasm15.inc"
+	"usbdrvasm16.inc"
+	"usbdrvasm165.inc"
+	"usbdrvasm20.inc"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm18-crc.inc
+	"asmcommon.inc"
+	<stdio.h>
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\asmcommon.inc
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm12.inc
+	"asmcommon.inc"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm128.inc
+	"asmcommon.inc"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm15.inc
+	"asmcommon.inc"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm16.inc
+	"asmcommon.inc"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm165.inc
+	"asmcommon.inc"
+
+1354788992 c:\data\hp48gx_1\hp48gx_allworks\usbdrv\usbdrvasm20.inc
+	"asmcommon.inc"
+
+1478271711 source:c:\data\hp48gx_1\hp48gx_allworks\main.c
+	<avr/io.h>
+	<util/delay.h>
+	<math.h>
+	"usbconfig.h"
+	"usbdrv/usbdrv.h"
+	<avr/wdt.h>
+	<avr/interrupt.h>
+	<stddef.h>
+	<stdint.h>
+
+1474465178 c:\data\hp48gx_1\hp48gx_allworks\usbconfig.h
+
