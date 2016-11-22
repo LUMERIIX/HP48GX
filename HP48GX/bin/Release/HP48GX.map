@@ -140,7 +140,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x9e8
+.text           0x00000000      0xb00
  *(.vectors)
  .vectors       0x00000000       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn88.o
                 0x00000000                __vectors
@@ -224,41 +224,42 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
                 0x00000106                __vector_16
                 0x00000106                __vector_18
  .text          0x00000108        0x0 obj\Release\fuse.o
- .text          0x00000108      0x36a obj\Release\main.o
-                0x0000039e                Init
-                0x000002fc                OnKey
+ .text          0x00000108      0x482 obj\Release\main.o
+                0x00000422                Init
+                0x00000456                ignoreKey
+                0x0000032e                OnKey
                 0x00000108                usbFunctionSetup
-                0x00000326                KeyPressed
+                0x0000035c                KeyPressed
                 0x00000172                buildReport
-                0x000003d2                main
+                0x000004d8                main
                 0x000001a4                scanMatrix
                 0x0000017c                __vector_14
                 0x0000016e                usbFunctionWrite
- .text          0x00000472        0x0 obj\Release\usbdrv\oddebug.o
- .text          0x00000472      0x2a8 obj\Release\usbdrv\usbdrv.o
-                0x0000048c                usbPoll
-                0x000006d6                usbSetInterrupt
-                0x00000472                usbInit
- .text          0x0000071a      0x2a6 obj\Release\usbdrv\usbdrvasm.o
-                0x0000074c                __vector_1
-                0x0000071a                usbCrc16
-                0x00000744                usbCrc16Append
- .text          0x000009c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_mulhi3.o)
- .text          0x000009c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
- .text          0x000009c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
- .text          0x000009c0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
-                0x000009c0                . = ALIGN (0x2)
+ .text          0x0000058a        0x0 obj\Release\usbdrv\oddebug.o
+ .text          0x0000058a      0x2a8 obj\Release\usbdrv\usbdrv.o
+                0x000005a4                usbPoll
+                0x000007ee                usbSetInterrupt
+                0x0000058a                usbInit
+ .text          0x00000832      0x2a6 obj\Release\usbdrv\usbdrvasm.o
+                0x00000864                __vector_1
+                0x00000832                usbCrc16
+                0x0000085c                usbCrc16Append
+ .text          0x00000ad8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_mulhi3.o)
+ .text          0x00000ad8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .text          0x00000ad8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+ .text          0x00000ad8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x00000ad8                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x000009c0       0x24 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_mulhi3.o)
-                0x000009c0                __mulhi3
- .text.libgcc   0x000009e4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
- .text.libgcc   0x000009e4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
- .text.libgcc   0x000009e4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
-                0x000009e4                . = ALIGN (0x2)
+ .text.libgcc   0x00000ad8       0x24 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_mulhi3.o)
+                0x00000ad8                __mulhi3
+ .text.libgcc   0x00000afc        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x00000afc        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000afc        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x00000afc                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000009e4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
-                0x000009e4                exit
-                0x000009e4                _exit
+ .fini9         0x00000afc        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                0x00000afc                exit
+                0x00000afc                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -277,11 +278,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000009e4        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .fini0         0x00000afc        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
  *(.fini0)
-                0x000009e8                _etext = .
+                0x00000b00                _etext = .
 
-.data           0x00800100       0x40 load address 0x000009e8
+.data           0x00800100       0x40 load address 0x00000b00
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn88.o
@@ -310,12 +311,12 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
  .bss           0x00800140        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn88.o
  .bss           0x00800140        0x0 obj\Release\fuse.o
  .bss           0x00800140       0x20 obj\Release\main.o
-                0x00800143                keybuild
-                0x00800141                EnableKeyPressed
+                0x00800145                keybuild
+                0x00800143                EnableKeyPressed
                 0x00800140                state
+                0x00800141                old_keybuild
                 0x00800149                changedKeys
-                0x00800147                FAIL
-                0x00800145                OnCount
+                0x00800147                OnCount
  .bss           0x00800160        0x0 obj\Release\usbdrv\oddebug.o
  .bss           0x00800160        0x1 obj\Release\usbdrv\usbdrv.o
  .bss           0x00800161        0x0 obj\Release\usbdrv\usbdrvasm.o
@@ -338,8 +339,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
                 0x00800180                usbConfiguration
                 0x00800181                usbRxBuf
                 0x00800197                PROVIDE (__bss_end, .)
-                0x000009e8                __data_load_start = LOADADDR (.data)
-                0x00000a28                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000b00                __data_load_start = LOADADDR (.data)
+                0x00000b40                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800197        0x0
                 0x00800197                PROVIDE (__noinit_start, .)
@@ -433,7 +434,6 @@ Cross Reference Table
 
 Symbol                                            File
 EnableKeyPressed                                  obj\Release\main.o
-FAIL                                              obj\Release\main.o
 Init                                              obj\Release\main.o
 KeyPressed                                        obj\Release\main.o
 OnCount                                           obj\Release\main.o
@@ -485,9 +485,11 @@ buildReport                                       obj\Release\main.o
 changedKeys                                       obj\Release\main.o
 exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
                                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn88.o
+ignoreKey                                         obj\Release\main.o
 keybuild                                          obj\Release\main.o
 main                                              obj\Release\main.o
                                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn88.o
+old_keybuild                                      obj\Release\main.o
 scanMatrix                                        obj\Release\main.o
 state                                             obj\Release\main.o
 usbConfiguration                                  obj\Release\usbdrv\usbdrv.o

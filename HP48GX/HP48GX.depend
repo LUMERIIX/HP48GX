@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1472127191 source:c:\data\hp48gx_1\hp48gx\fuse.c
+1472123591 source:c:\data\hp48gx_1\hp48gx\fuse.c
 	<avr/io.h>
 
-1474459329 source:c:\data\hp48gx_1\hp48gx\main.c
+1479822015 source:c:\data\hp48gx_1\hp48gx\main.c
 	<avr/io.h>
 	<util/delay.h>
 	<math.h>
@@ -13,14 +13,14 @@
 	<stddef.h>
 	<stdint.h>
 
-1473425722 c:\data\hp48gx_1\hp48gx\usbconfig.h
+1479458383 c:\data\hp48gx_1\hp48gx\usbconfig.h
 
-1472717516 source:c:\data\hp48gx_1\hp48gx\usbdrv\usbdrv.c
+1472713916 source:c:\data\hp48gx_1\hp48gx\usbdrv\usbdrv.c
 	"usbportability.h"
 	"usbdrv.h"
 	"oddebug.h"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbportability.h
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbportability.h
 	<ioavr.h>
 	<inavr.h>
 	<io.h>
@@ -28,16 +28,16 @@
 	<avr/io.h>
 	<avr/pgmspace.h>
 
-1472717505 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrv.h
+1472713905 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrv.h
 	"usbconfig.h"
 	"usbportability.h"
 
-1338498184 c:\data\hp48gx_1\hp48gx\usbdrv\usbconfig.h
+1338494584 c:\data\hp48gx_1\hp48gx\usbdrv\usbconfig.h
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\oddebug.h
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\oddebug.h
 	"usbportability.h"
 
-1354792592 source:c:\data\hp48gx_1\hp48gx\usbdrv\oddebug.c
+1354788992 source:c:\data\hp48gx_1\hp48gx\usbdrv\oddebug.c
 	"oddebug.h"
 
 1472130791 source:c:\data\hp48gx\fuse.c
@@ -102,7 +102,7 @@
 1354792592 c:\data\hp48gx\usbdrv\usbdrvasm20.inc
 	"asmcommon.inc"
 
-1472717529 source:c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm.s
+1472713929 source:c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm.s
 	"usbportability.h"
 	"usbdrv.h"
 	"usbdrvasm18-crc.inc"
@@ -113,28 +113,28 @@
 	"usbdrvasm165.inc"
 	"usbdrvasm20.inc"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm18-crc.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm18-crc.inc
 	"asmcommon.inc"
 	<stdio.h>
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\asmcommon.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\asmcommon.inc
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm12.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm12.inc
 	"asmcommon.inc"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm128.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm128.inc
 	"asmcommon.inc"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm15.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm15.inc
 	"asmcommon.inc"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm16.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm16.inc
 	"asmcommon.inc"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm165.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm165.inc
 	"asmcommon.inc"
 
-1354792592 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm20.inc
+1354788992 c:\data\hp48gx_1\hp48gx\usbdrv\usbdrvasm20.inc
 	"asmcommon.inc"
 
 1472127191 source:c:\data\hp48gx_1\hp48gx  nothing works onkey on portb\fuse.c

@@ -20,7 +20,7 @@
 
 #define ROWS 10
 #define DEBOUNCE_CYCLES 8
-#define TAB2HP  (60) ///F3
+#define TAB2HP  (68) ///F11
 //-------------------------------globale Variablen----------------------------
 
 uchar state = STATE_WAIT;
@@ -38,11 +38,11 @@ static uint16_t activeRow = 0x01;
 static uint8_t activeRowIdx = 0;
 static uint8_t keyStates[ROWS] = {0};
 
+int old_keybuild = 0;
 int EnableKeyPressed = 0;
 static int isrFlag = 0;
 int keybuild = 0;
-int OnCount = 0;
-int FAIL = 0;
+int16_t OnCount = 0;
 uint8_t changedKeys = 0;
 static uint8_t debouncing[DEBOUNCE_CYCLES][ROWS]={{0}}; //uint8_t
 PROGMEM char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] = {
@@ -142,21 +142,15 @@ void scanMatrix(void)
 {
     if(!isrFlag)
         return;
-    isrFlag = 0;
-    uint8_t newVal = PIND & 0xF3; /// mask data lines
+    if(EnableKeyPressed == 1)
+        return;
+    if(state == STATE_SEND_KEY)
+        return;
 
-//    int allEqual = 1;
-//    int idx = 0;
-//    for (idx = 0 ; idx < DEBOUNCE_CYCLES-1; ++idx)
-//    {
-//        if ( newVal != debouncing[idx][activeRowIdx] )
-//            allEqual = 0;
-//        debouncing[idx][activeRowIdx] = debouncing[idx+1][activeRowIdx];
-//
-//    }
-//    if ( newVal != debouncing[idx][activeRowIdx] )
-//        allEqual = 0;
-//    debouncing[idx][activeRowIdx] = newVal;
+    isrFlag = 0;
+    //int idx = 0;
+    uint8_t newVal = PIND & 0xF3; /// mask data lines
+    //int allEqual = 1;
 
 
     uint8_t changedKeys = keyStates[activeRowIdx] ^ newVal;
@@ -167,6 +161,10 @@ void scanMatrix(void)
         {
             state = STATE_SEND_KEY;
             keybuild = (ScanCode[activeRowIdx][0]);//A5
+            if((keybuild == 224) || (keybuild == 225))
+            {
+                state = STATE_WAIT;
+            }
         }
          else if((~newVal&0x02) && (changedKeys&0x02)) ///A4
         {
@@ -193,9 +191,11 @@ void scanMatrix(void)
             state = STATE_SEND_KEY;
             keybuild = (ScanCode[activeRowIdx][5]);//A0
         }
+
     }
     activeRow <<= 1;
     activeRowIdx += 1;
+
     if(activeRow == 0x40)
     {
         activeRow <<= 1;
@@ -205,7 +205,6 @@ void scanMatrix(void)
         activeRow = 0x01;
         activeRowIdx = 0;
     }
-
     DDRC = activeRow;
     DDRA = ((activeRow >> 8) | 0x04);
 }
@@ -214,55 +213,58 @@ void OnKey (void)
 {
     if(state == STATE_SEND_KEY)
         return;
-
-    int OnVal = (PINB&0x80); ///Mask PIN7
-//    int allEqual = 1;
-//    int idx = 0;
-//    for (idx = 0; idx < DEBOUNCE_CYCLES - 1; ++idx)
-//    {
-//        allEqual &= (OnVal == debouncing[idx][9]);
-//        debouncing[idx][9] = debouncing[idx+1][9];
-//
-//    }
-//    allEqual &= (OnVal == debouncing[idx][9]);
-//    debouncing[idx][9] = OnVal;
-
-    uint8_t changedKeysOn = keyStates[9] ^ OnVal;
-    keyStates[9] = OnVal;
-
-
-    if((~OnVal&0x80) /*&& (changedKeysOn&0x80)*/)///ONKEY
+    if((activeRow == 0x80)||(activeRow == 0x100))///A11||A10
     {
-        PORTB = 0b00000001;
-        EnableKeyPressed = 1;
+
+        int OnVal = (PIND&0x01); ///Mask PIN1
+
+        if((~OnVal&0x01))///ONKEY
+        {
+            EnableKeyPressed = 1;
+        }
     }
-
-
 }
 
 void KeyPressed (void)
 {
+
     if(EnableKeyPressed == 0)
         return;
-    if((PINB&0x80)==0)
+    if((PIND&0x01)==0)
     {
         OnCount++;
-
-        if(OnCount == 800)///pressed and hold
+        if(keybuild == 224)
         {
-            keybuild = (TAB2HP);
+            keybuild = 0;
+            state = STATE_WAIT;
+            return;
+        }
+        if(OnCount == 4800)///pressed and hold
+        {
+            if(activeRow == 0x80)
+            {
+                keybuild = (TAB2HP);
+                OnCount = 0;
+            }
+            if(activeRow == 0x100)
+            {
+                keybuild = (41);
+                OnCount = 0;
+            }
             state = STATE_SEND_KEY;
             EnableKeyPressed = 0;
-            OnCount = 0;
         }
     }
-    if((OnCount < 800) && (OnCount > 600))///pressed
+    else
     {
-        keybuild = (ScanCode[9][0]);
-        state = STATE_SEND_KEY;
+        OnCount = 0;
         EnableKeyPressed = 0;
+        if(activeRow == 0x80)
+            keybuild = 225;
+        if(activeRow == 0x100)
+            keybuild = 224;
+        state = STATE_SEND_KEY;
     }
-
 }
 
 void Init (void)
@@ -282,6 +284,21 @@ void Init (void)
     DDRB    = 0b00000001;
     PORTB   = 0b00000000;
 }
+
+void ignoreKey (void)
+{
+    if((old_keybuild == 41)&&(keybuild == 224))
+        keybuild = 0;
+    if((old_keybuild == 224)&&(keybuild == 41))
+        keybuild  = 0;
+    if((old_keybuild == 41)&&(keybuild == 41))
+        keybuild = 0;
+    if((old_keybuild == TAB2HP)&&(keybuild == 225))
+                keybuild = 0;
+    if((old_keybuild == 225)&&(keybuild == TAB2HP))
+                keybuild  = 0;
+}
+
 //----------------------Main--------------------------------
 int main(void)
 {
@@ -302,24 +319,27 @@ int main(void)
     usbDeviceConnect();
 
     cli();
-    TCCR0A = 0b00000011; //clk/8 ==> timeout 1.35ms
+    TCCR0A = 0b00000010; //clk/64 ==> timeout 1.02ms ==> clk / 8 127us
     TIMSK0 = 0b00000001;
     sei();
 
     while(1)
     {
-        KeyPressed();
+        //scanMatrix();
         OnKey();
+        KeyPressed(); //Key don't work
         scanMatrix();
         wdt_reset(); // keep the watchdog happy
         usbPoll();
 
         if(usbInterruptIsReady() && state != STATE_WAIT)
         {
+            ignoreKey();
             switch(state)
 			{
 			case STATE_SEND_KEY:
                 buildReport(keybuild);
+                old_keybuild = keybuild;
 				state = STATE_RELEASE_KEY; // release next
 				break;
 			case STATE_RELEASE_KEY:
