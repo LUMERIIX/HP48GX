@@ -1,0 +1,46 @@
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=+5V Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=+5V Pin=C3-2
+Change Component DesignItemId : Designator=R1 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=R2 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=R3 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=R4 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=R5 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=R6 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=R7 Old DesignItemId=10K  0603  14.00373 New DesignItemId=(1K  0805  14.00130
+Change Component DesignItemId : Designator=C1 Old DesignItemId=10uF  1210  15.00211 New DesignItemId=(1pF  0805  15.00064
+Change Component DesignItemId : Designator=C2 Old DesignItemId=100nF  1210  15.00039 New DesignItemId=1uF  0402  118194
+Change Component DesignItemId : Designator=C3 Old DesignItemId=100nF  1210  15.00039 New DesignItemId=1uF  0402  118194
+Change Component DesignItemId : Designator=X2 Old DesignItemId=LÖTANSCHLUSS 4-FACH  LÖTANSCHLUSS 4X 2X5MM  - New DesignItemId=LÖTANSCHLUSS 4-FACH  LOCH
+Change Component Footprint: Designator=R1 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=R2 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=R3 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=R4 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=R5 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=R6 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=R7 Old Footprint=0603R New Footprint=0805R
+Change Component Footprint: Designator=C2 Old Footprint=1210C New Footprint=0402C
+Change Component Footprint: Designator=C3 Old Footprint=1210C New Footprint=0402C
+Change Component Footprint: Designator=C1 Old Footprint=1210C New Footprint=0805C
+Change Component Comment : Designator=C1 Old Comment=10uF New Comment=1pF
+Change Component Comment : Designator=X2 Old Comment=LÖTANSCHLUSS 4-FACH New Comment=LÖTANSCHLUSS LOCH
+Change Component Description : Designator=X2 Old Description=Stecker/Lötanschluss New Description=AnschlussLoch
+Change Component Library : Designator=X2 Old Library=Library Comlab.IntLib New Library=HP48GX_01_1.SCHLIB
+Added Component: Designator=R8(0805R)
+Added Component: Designator=V1(SOT-23)
+Added Component: Designator=V2(SOT-23)
+Added Pin To Net: NetName=+5V Pin=C1-1
+Added Pin To Net: NetName=+5V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=+5V Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=D- Pin=R8-1
+Added Pin To Net: NetName=+5V Pin=R8-2
+Added Pin To Net: NetName=GND Pin=V1-1
+Added Pin To Net: NetName=D+ Pin=V1-3
+Added Pin To Net: NetName=GND Pin=V2-1
+Added Pin To Net: NetName=D- Pin=V2-3
+Added Member To Class: ClassName=1_123456_01 Member=Component R8 2k
+Added Member To Class: ClassName=1_123456_01 Member=Component V1 MMBZ5227B 8B
+Added Member To Class: ClassName=1_123456_01 Member=Component V2 MMBZ5227B 8B

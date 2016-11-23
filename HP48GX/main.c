@@ -38,6 +38,7 @@ static uint16_t activeRow = 0x01;
 static uint8_t activeRowIdx = 0;
 static uint8_t keyStates[ROWS] = {0};
 
+int TimeCount = 0;
 int old_keybuild = 0;
 int EnableKeyPressed = 0;
 static int isrFlag = 0;
@@ -87,7 +88,6 @@ uchar ScanCode [10][6] = {{0,5,6,7,8,9},
                           {0,23,24,25,26,27},
                           {0,88,29,28,76,42},
                           {43,22,36,37,38,84},
-             //             {0,0,0,0,0,0}, // unused
                    /*225*/{225,10,33,34,35,85},
                    /*224*/{224,4,30,31,32,86},
                           {0,16,39,55,44,87},
@@ -119,7 +119,19 @@ usbMsgLen_t usbFunctionSetup(unsigned char data[8]) {
     return 0; // by default don't return any data
 }
 
+void ignoreKey (void) //reduce wrong evaluation of dualkeys
+{
 
+    if((old_keybuild == TAB2HP)&&(keybuild == 225) && (state == STATE_SEND_KEY)&&(TimeCount < 1000))
+        state = STATE_WAIT;
+    else if(old_keybuild == TAB2HP)
+        TimeCount = 0;
+    if((old_keybuild == 41)&&(keybuild == 224) && (state == STATE_SEND_KEY) && (TimeCount < 1000))
+        state = STATE_WAIT;
+    else if(old_keybuild == 41)
+        TimeCount = 0;
+
+}
 
 usbMsgLen_t usbFunctionWrite(uint8_t * data, uchar len)
 {
@@ -144,13 +156,9 @@ void scanMatrix(void)
         return;
     if(EnableKeyPressed == 1)
         return;
-    if(state == STATE_SEND_KEY)
-        return;
-
     isrFlag = 0;
-    //int idx = 0;
+    TimeCount++;
     uint8_t newVal = PIND & 0xF3; /// mask data lines
-    //int allEqual = 1;
 
 
     uint8_t changedKeys = keyStates[activeRowIdx] ^ newVal;
@@ -161,10 +169,6 @@ void scanMatrix(void)
         {
             state = STATE_SEND_KEY;
             keybuild = (ScanCode[activeRowIdx][0]);//A5
-            if((keybuild == 224) || (keybuild == 225))
-            {
-                state = STATE_WAIT;
-            }
         }
          else if((~newVal&0x02) && (changedKeys&0x02)) ///A4
         {
@@ -191,7 +195,6 @@ void scanMatrix(void)
             state = STATE_SEND_KEY;
             keybuild = (ScanCode[activeRowIdx][5]);//A0
         }
-
     }
     activeRow <<= 1;
     activeRowIdx += 1;
@@ -215,9 +218,7 @@ void OnKey (void)
         return;
     if((activeRow == 0x80)||(activeRow == 0x100))///A11||A10
     {
-
         int OnVal = (PIND&0x01); ///Mask PIN1
-
         if((~OnVal&0x01))///ONKEY
         {
             EnableKeyPressed = 1;
@@ -233,12 +234,6 @@ void KeyPressed (void)
     if((PIND&0x01)==0)
     {
         OnCount++;
-        if(keybuild == 224)
-        {
-            keybuild = 0;
-            state = STATE_WAIT;
-            return;
-        }
         if(OnCount == 4800)///pressed and hold
         {
             if(activeRow == 0x80)
@@ -252,7 +247,6 @@ void KeyPressed (void)
                 OnCount = 0;
             }
             state = STATE_SEND_KEY;
-            EnableKeyPressed = 0;
         }
     }
     else
@@ -285,19 +279,7 @@ void Init (void)
     PORTB   = 0b00000000;
 }
 
-void ignoreKey (void)
-{
-    if((old_keybuild == 41)&&(keybuild == 224))
-        keybuild = 0;
-    if((old_keybuild == 224)&&(keybuild == 41))
-        keybuild  = 0;
-    if((old_keybuild == 41)&&(keybuild == 41))
-        keybuild = 0;
-    if((old_keybuild == TAB2HP)&&(keybuild == 225))
-                keybuild = 0;
-    if((old_keybuild == 225)&&(keybuild == TAB2HP))
-                keybuild  = 0;
-}
+
 
 //----------------------Main--------------------------------
 int main(void)
@@ -319,13 +301,12 @@ int main(void)
     usbDeviceConnect();
 
     cli();
-    TCCR0A = 0b00000010; //clk/64 ==> timeout 1.02ms ==> clk / 8 127us
+    TCCR0A = 0b00000010; //timeout clk / 8 127us Zyklus
     TIMSK0 = 0b00000001;
     sei();
 
     while(1)
     {
-        //scanMatrix();
         OnKey();
         KeyPressed(); //Key don't work
         scanMatrix();
@@ -340,11 +321,13 @@ int main(void)
 			case STATE_SEND_KEY:
                 buildReport(keybuild);
                 old_keybuild = keybuild;
+                if((keybuild == 41) || (keybuild == TAB2HP))
+                    EnableKeyPressed = 0;
 				state = STATE_RELEASE_KEY; // release next
 				break;
 			case STATE_RELEASE_KEY:
-                buildReport(0);
-                state = STATE_WAIT; // go back to waiting
+                    buildReport(0);
+                    state = STATE_WAIT; // go back to waiting
                 break;
 			default:
                 state = STATE_WAIT; // should not happen

@@ -1,0 +1,48 @@
+Added Pin To Net: NetName=NetR6_1 Pin=X6-1
+Added Pin To Net: NetName=NetR5_1 Pin=X6-2
+Added Pin To Net: NetName=NetR4_1 Pin=X7-1
+Added Pin To Net: NetName=NetR3_1 Pin=X7-2
+Added Pin To Net: NetName=NetR2_1 Pin=X7-3
+Added Pin To Net: NetName=NetR1_1 Pin=X7-4
+Change Net Name : Old Net Name=NetR1_1 New Net Name=PI5
+Change Net Name : Old Net Name=NetR2_1 New Net Name=PI4
+Change Net Name : Old Net Name=NetR3_1 New Net Name=PI3
+Change Net Name : Old Net Name=NetR4_1 New Net Name=PI2
+Change Net Name : Old Net Name=NetR5_1 New Net Name=PI1
+Change Net Name : Old Net Name=NetR6_1 New Net Name=PI0
+Added Pin To Net: NetName=PO0 Pin=U1-30
+Added Pin To Net: NetName=PO0 Pin=X3-1
+Added Net: Name=PO0
+Added Pin To Net: NetName=PO1 Pin=U1-31
+Added Pin To Net: NetName=PO1 Pin=X3-2
+Added Net: Name=PO1
+Added Pin To Net: NetName=PO2 Pin=U1-32
+Added Pin To Net: NetName=PO2 Pin=X3-3
+Added Net: Name=PO2
+Added Pin To Net: NetName=PO3 Pin=U1-1
+Added Pin To Net: NetName=PO3 Pin=X3-4
+Added Net: Name=PO3
+Added Pin To Net: NetName=PO4 Pin=U1-2
+Added Pin To Net: NetName=PO4 Pin=X4-1
+Added Net: Name=PO4
+Added Pin To Net: NetName=PO5 Pin=U1-9
+Added Pin To Net: NetName=PO5 Pin=X4-2
+Added Net: Name=PO5
+Added Pin To Net: NetName=PO6 Pin=U1-10
+Added Pin To Net: NetName=PO6 Pin=X4-3
+Added Net: Name=PO6
+Added Pin To Net: NetName=PO7 Pin=U1-11
+Added Pin To Net: NetName=PO7 Pin=X4-4
+Added Net: Name=PO7
+Added Pin To Net: NetName=PO8 Pin=U1-19
+Added Pin To Net: NetName=PO8 Pin=X5-1
+Added Net: Name=PO8
+Added Pin To Net: NetName=PO9 Pin=U1-22
+Added Pin To Net: NetName=PO9 Pin=X5-2
+Added Net: Name=PO9
+Added Pin To Net: NetName=PO10 Pin=U1-3
+Added Pin To Net: NetName=PO10 Pin=X5-3
+Added Net: Name=PO10
+Added Pin To Net: NetName=POON Pin=U1-6
+Added Pin To Net: NetName=POON Pin=X5-4
+Added Net: Name=POON

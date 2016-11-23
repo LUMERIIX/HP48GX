@@ -1,0 +1,54 @@
+[OutputDatabaseLinkFile]
+Version=1.1
+[DatabaseLinks]
+ConnectionString=Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\Unterstützung\Vorlagen\PCB_Design\Altium_Designer\Altium_Designer_Library\Parameter Update\Database\ERP_Abfrage_Layout_Hersteller.xlsx;Extended Properties="Excel 12.0 Xml;HDR=Yes;IMEX=1"
+AddMode=3
+RemoveMode=1
+UpdateMode=2
+ViewMode=0
+LeftQuote=[
+RightQuote=]
+QuoteTableNames=1
+UseTableSchemaName=0
+DefaultColumnType=VARCHAR(255)
+LibraryDatabaseType=Microsoft Excel 2007
+LibraryDatabasePath=G:\Unterstützung\Vorlagen\PCB_Design\Altium_Designer\Altium_Designer_Library\Parameter Update\Database\ERP_Abfrage_Layout_Hersteller.xlsx
+DatabasePathRelative=0
+TopPanelCollapsed=0
+LastFocusedTable=Hersteller$
+[Table1]
+SchemaName=
+TableName=Hersteller$
+Enabled=True
+UserWhere=0
+UserWhereText=
+[Table2]
+SchemaName=
+TableName=Hersteller$ERP_Abfrage_Layout
+Enabled=False
+UserWhere=0
+UserWhereText=
+[Table3]
+SchemaName=
+TableName=Hersteller$ERP_Abfrage_Layout_1
+Enabled=False
+UserWhere=0
+UserWhereText=
+[FieldMap1]
+Options=FieldName=Hersteller$.ARTARTNR|TableNameOnly=Hersteller$|FieldNameOnly=ARTARTNR|FieldType=0|ParameterName=Artikelnummer IN-ERP|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap2]
+Options=FieldName=Hersteller$.DESCR|TableNameOnly=Hersteller$|FieldNameOnly=DESCR|FieldType=1|ParameterName=|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap3]
+Options=FieldName=Hersteller$.MANUFACTURERITEMID|TableNameOnly=Hersteller$|FieldNameOnly=MANUFACTURERITEMID|FieldType=1|ParameterName=|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap4]
+Options=FieldName=Hersteller$.Herst1|TableNameOnly=Hersteller$|FieldNameOnly=Herst1|FieldType=1|ParameterName=Herst. 1|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap5]
+Options=FieldName=Hersteller$.HerstArt1|TableNameOnly=Hersteller$|FieldNameOnly=HerstArt1|FieldType=1|ParameterName=Herst. 1 ArtNr.|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap6]
+Options=FieldName=Hersteller$.Herst2|TableNameOnly=Hersteller$|FieldNameOnly=Herst2|FieldType=1|ParameterName=Herst. 2|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap7]
+Options=FieldName=Hersteller$.HerstArt2|TableNameOnly=Hersteller$|FieldNameOnly=HerstArt2|FieldType=1|ParameterName=Herst. 2 ArtNr.|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap8]
+Options=FieldName=Hersteller$.Herst3|TableNameOnly=Hersteller$|FieldNameOnly=Herst3|FieldType=1|ParameterName=Herst. 3|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap9]
+Options=FieldName=Hersteller$.HerstArt3|TableNameOnly=Hersteller$|FieldNameOnly=HerstArt3|FieldType=1|ParameterName=Herst. 3 ArtNr.|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0

@@ -1,0 +1,75 @@
+[OutputDatabaseLinkFile]
+Version=1.1
+[DatabaseLinks]
+ConnectionString=Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\Unterstützung\Vorlagen\PCB_Design\Altium_Designer\Altium_Designer_Library\Parameter Update\Database\ERP_Abfrage_Layout.accdb;Persist Security Info=False
+AddMode=2
+RemoveMode=1
+UpdateMode=2
+ViewMode=0
+LeftQuote=[
+RightQuote=]
+QuoteTableNames=1
+UseTableSchemaName=0
+DefaultColumnType=VARCHAR(255)
+LibraryDatabaseType=Microsoft Access 2007
+LibraryDatabasePath=G:\Unterstützung\Vorlagen\PCB_Design\Altium_Designer\Altium_Designer_Library\Parameter Update\Database\ERP_Abfrage_Layout.accdb
+DatabasePathRelative=0
+TopPanelCollapsed=0
+LastFocusedTable=Altium_Artikel
+[Table1]
+SchemaName=
+TableName=Altium_Artikel
+Enabled=True
+UserWhere=0
+UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=ARTNR0=122|BNR0=107|BEZ10=337|BEZ20=419|LAGERBESTAND0=103|VALUATIONPRICE0=111|SHORTDESCR0=92|StatusBezeichnung0=122|AblagePfad0=82|DatenblattText0=98|Datum0=62|Rev_Aenderung0=440|Rev0=41|Rev_Datum_Name0=114
+[Table2]
+SchemaName=
+TableName=Altium_Hersteller
+Enabled=False
+UserWhere=0
+UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=ARTARTNR0=136|DESCR0=259|MANUFACTURERITEMID0=221
+[Table3]
+SchemaName=
+TableName=Altium_Lieferant
+Enabled=False
+UserWhere=0
+UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=ARTNR0=57|ADRESSZEILE10=240|BSTNR0=201
+[Table4]
+SchemaName=
+TableName=Status_Bezeichnung
+Enabled=False
+UserWhere=0
+UserWhereText=
+[FieldMap1]
+Options=FieldName=Altium_Artikel.ARTNR|TableNameOnly=Altium_Artikel|FieldNameOnly=ARTNR|FieldType=0|ParameterName=Artikelnummer IN-ERP|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap2]
+Options=FieldName=Altium_Artikel.BNR|TableNameOnly=Altium_Artikel|FieldNameOnly=BNR|FieldType=1|ParameterName=Artikelnummer Damgaard|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap3]
+Options=FieldName=Altium_Artikel.BEZ1|TableNameOnly=Altium_Artikel|FieldNameOnly=BEZ1|FieldType=1|ParameterName=Bezeichnung 1|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap4]
+Options=FieldName=Altium_Artikel.BEZ2|TableNameOnly=Altium_Artikel|FieldNameOnly=BEZ2|FieldType=1|ParameterName=Bezeichnung 2|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap5]
+Options=FieldName=Altium_Artikel.LAGERBESTAND|TableNameOnly=Altium_Artikel|FieldNameOnly=LAGERBESTAND|FieldType=1|ParameterName=Lagerbestand|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap6]
+Options=FieldName=Altium_Artikel.VALUATIONPRICE|TableNameOnly=Altium_Artikel|FieldNameOnly=VALUATIONPRICE|FieldType=1|ParameterName=Grundpreis|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap7]
+Options=FieldName=Altium_Artikel.SHORTDESCR|TableNameOnly=Altium_Artikel|FieldNameOnly=SHORTDESCR|FieldType=1|ParameterName=Material Gruppe|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap8]
+Options=FieldName=Altium_Artikel.StatusBezeichnung|TableNameOnly=Altium_Artikel|FieldNameOnly=StatusBezeichnung|FieldType=1|ParameterName=Status Artikel|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap9]
+Options=FieldName=Altium_Artikel.AblagePfad|TableNameOnly=Altium_Artikel|FieldNameOnly=AblagePfad|FieldType=1|ParameterName=ComponentLink1URL|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap10]
+Options=FieldName=Altium_Artikel.DatenblattText|TableNameOnly=Altium_Artikel|FieldNameOnly=DatenblattText|FieldType=1|ParameterName=ComponentLink1Description|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap11]
+Options=FieldName=Altium_Artikel.Datum|TableNameOnly=Altium_Artikel|FieldNameOnly=Datum|FieldType=1|ParameterName=Datum Library Update|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap12]
+Options=FieldName=Altium_Artikel.Rev_Aenderung|TableNameOnly=Altium_Artikel|FieldNameOnly=Rev_Aenderung|FieldType=1|ParameterName=Rev_Änderung|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0

@@ -1,0 +1,13 @@
+Removed Member From Class: ClassName=1_123456_01 Member=E9
+Removed Member From Class: ClassName=1_123456_01 Member=E91
+Removed Member From Class: ClassName=1_123456_01 Member=E92
+Removed Member From Class: ClassName=1_123456_01 Member=E93
+Removed Member From Class: ClassName=1_123456_01 Member=E95
+Removed Member From Class: ClassName=1_123456_01 Member=E96
+Removed Member From Class: ClassName=1_123456_01 Member=E97
+Added Component: Designator=R9(0805R)
+Added Pin To Net: NetName=ONKEY Pin=R9-1
+Added Pin To Net: NetName=+5V Pin=R9-2
+Added Member To Class: ClassName=1_123456_01 Member=Component R9 10k
+Added Member To Class: ClassName=1_123456_01 Member=Component U1 ATtiny88
+Added Room: Name=1_123456_01

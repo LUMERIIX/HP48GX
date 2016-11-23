@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=MOSI Pin=X1-5
+Removed Pin From Net: NetName=SCK Pin=X1-9
+Removed Pin From Net: NetName=MISO Pin=X1-13
+Removed Pin From Net: NetName=RESET Pin=X1-15
+Removed Pin From Net: NetName=+5V Pin=X2-1
+Removed Pin From Net: NetName=D- Pin=X2-2
+Removed Pin From Net: NetName=D+ Pin=X2-3
+Removed Pin From Net: NetName=GND Pin=X2-4
+Removed Member From Class: ClassName=1_123456_01 Member=X2
+Change Component DesignItemId : Designator=X1 Old DesignItemId=HEADER20P  XHEAD2R20PR0.5SB  119896 New DesignItemId=LÖTANSCHLUSS 4-FACH  LÖTANSCHLUSS 4X 2X5MM  -
+Change Component Footprint: Designator=X1 Old Footprint=XHEAD2R20PR0.5SB New Footprint=LÖTANSCHLUSS 4X 2X5MM
+Change Component Comment : Designator=X1 Old Comment=Header 20P New Comment=LÖTANSCHLUSS 4-FACH
+Change Component Kind : Designator=X1 Old Kind=Standard New Kind=Standard (No BOM)
+Added Component: Designator=X??(XHEAD2R20PR0.5SB)
+Added Pin To Net: NetName=+5V Pin=X1-1
+Added Pin To Net: NetName=D- Pin=X1-2
+Added Pin To Net: NetName=D+ Pin=X1-3
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Member To Class: ClassName=1_123456_01 Member=Component X?? Header 10P

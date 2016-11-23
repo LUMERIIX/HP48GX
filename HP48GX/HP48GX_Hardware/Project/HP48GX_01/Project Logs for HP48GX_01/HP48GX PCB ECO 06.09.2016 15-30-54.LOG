@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=SCK Pin=X2-1
+Added Pin To Net: NetName=GND Pin=X2-2
+Added Pin To Net: NetName=MISO Pin=X2-3
+Added Pin To Net: NetName=RESET Pin=X2-5
+Added Pin To Net: NetName=+5V Pin=X2-6
+Added Pin To Net: NetName=MOSI Pin=X2-9
+Added Pin To Net: NetName=GND Pin=X2-10
+Added Member To Class: ClassName=1_123456_01 Member=Component X3 Header 10P

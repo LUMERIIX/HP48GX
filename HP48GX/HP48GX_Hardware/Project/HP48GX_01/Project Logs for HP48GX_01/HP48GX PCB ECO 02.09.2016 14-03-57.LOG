@@ -1,0 +1,92 @@
+Removed Pin From Net: NetName=D+ Pin=U1-12
+Removed Pin From Net: NetName=D- Pin=U1-13
+Removed Pin From Net: NetName=D+ Pin=V1-3
+Removed Pin From Net: NetName=D- Pin=V2-3
+Removed Pin From Net: NetName=SCK Pin=X1-1
+Removed Pin From Net: NetName=+5V Pin=X1-2
+Removed Pin From Net: NetName=MOSI Pin=X1-3
+Removed Pin From Net: NetName=+5V Pin=X1-4
+Removed Pin From Net: NetName=MISO Pin=X1-5
+Removed Pin From Net: NetName=GND Pin=X1-6
+Removed Pin From Net: NetName=RESET Pin=X1-7
+Removed Pin From Net: NetName=GND Pin=X1-8
+Change Component DesignItemId : Designator=X1 Old DesignItemId=HEADER8P  XHEAD2R8PR2MMSB SMD  35.00419 New DesignItemId=HEADER20P  XHEAD2R20PR0.5SB  119896
+Change Component Footprint: Designator=X1 Old Footprint=XHEAD2R8PR2MMSB SMD New Footprint=XHEAD2R20PR0.5SB
+Change Component Comment : Designator=X1 Old Comment=Header 8P New Comment=Header 20P
+Added Component: Designator=E9(ETIKETTE-PRINT-BESTÜCKT_12.7x12.7)
+Added Component: Designator=E95(SCHUTZLACK-STANDARD: BOTTOM)
+Added Component: Designator=E96(SCHUTZLACK-DICKFLÜSSIG: BOTTOM)
+Added Component: Designator=E97(SCHUTZLACK-KEIN BOTTOM)
+Added Pin To Net: NetName=D- Pin=U1-1
+Added Pin To Net: NetName=D+ Pin=U1-32
+Added Pin To Net: NetName=D- Pin=V1-3
+Added Pin To Net: NetName=D+ Pin=V2-3
+Added Pin To Net: NetName=MOSI Pin=X1-5
+Added Pin To Net: NetName=SCK Pin=X1-9
+Added Pin To Net: NetName=MISO Pin=X1-13
+Added Pin To Net: NetName=RESET Pin=X1-15
+Change Net Name : Old Net Name=PO8 New Net Name=A10
+Change Net Name : Old Net Name=PO9 New Net Name=A9
+Change Net Name : Old Net Name=PO10 New Net Name=VBAT
+Added Pin To Net: NetName=A0 Pin=U1-11
+Added Pin To Net: NetName=A0 Pin=X7-4
+Added Net: Name=A0
+Added Pin To Net: NetName=A1 Pin=R5-1
+Added Pin To Net: NetName=A1 Pin=R6-1
+Added Pin To Net: NetName=A1 Pin=U1-10
+Added Pin To Net: NetName=A1 Pin=X7-3
+Added Net: Name=A1
+Added Pin To Net: NetName=A2 Pin=R4-1
+Added Pin To Net: NetName=A2 Pin=U1-9
+Added Pin To Net: NetName=A2 Pin=X7-2
+Added Net: Name=A2
+Added Pin To Net: NetName=A3 Pin=R3-1
+Added Pin To Net: NetName=A3 Pin=U1-2
+Added Pin To Net: NetName=A3 Pin=X7-1
+Added Net: Name=A3
+Added Pin To Net: NetName=A4 Pin=R2-1
+Added Pin To Net: NetName=A4 Pin=U1-31
+Added Pin To Net: NetName=A4 Pin=X6-2
+Added Net: Name=A4
+Added Pin To Net: NetName=A5 Pin=R1-1
+Added Pin To Net: NetName=A5 Pin=U1-30
+Added Pin To Net: NetName=A5 Pin=X6-1
+Added Net: Name=A5
+Added Pin To Net: NetName=A11 Pin=U1-20
+Added Pin To Net: NetName=A11 Pin=X4-3
+Added Net: Name=A11
+Added Pin To Net: NetName=A12 Pin=U1-28
+Added Pin To Net: NetName=A12 Pin=X4-2
+Added Net: Name=A12
+Added Pin To Net: NetName=A13 Pin=U1-27
+Added Pin To Net: NetName=A13 Pin=X4-1
+Added Net: Name=A13
+Added Pin To Net: NetName=A14 Pin=U1-26
+Added Pin To Net: NetName=A14 Pin=X3-4
+Added Net: Name=A14
+Added Pin To Net: NetName=A15 Pin=U1-25
+Added Pin To Net: NetName=A15 Pin=X3-3
+Added Net: Name=A15
+Added Pin To Net: NetName=A16 Pin=U1-24
+Added Pin To Net: NetName=A16 Pin=X3-2
+Added Net: Name=A16
+Added Pin To Net: NetName=A17 Pin=U1-23
+Added Pin To Net: NetName=A17 Pin=X3-1
+Added Net: Name=A17
+Added Pin To Net: NetName=NetX1_4 Pin=X1-4
+Added Pin To Net: NetName=NetX1_4 Pin=X1-6
+Added Pin To Net: NetName=NetX1_4 Pin=X1-8
+Added Pin To Net: NetName=NetX1_4 Pin=X1-10
+Added Pin To Net: NetName=NetX1_4 Pin=X1-12
+Added Pin To Net: NetName=NetX1_4 Pin=X1-14
+Added Pin To Net: NetName=NetX1_4 Pin=X1-16
+Added Pin To Net: NetName=NetX1_4 Pin=X1-18
+Added Pin To Net: NetName=NetX1_4 Pin=X1-20
+Added Net: Name=NetX1_4
+Added Pin To Net: NetName=ONKEY Pin=U1-8
+Added Pin To Net: NetName=ONKEY Pin=X4-4
+Added Net: Name=ONKEY
+Added Member To Class: ClassName=1_123456_01 Member=Component E9 ETIKETTE  ETIKETTE-PRINT-BESTÜCKT_12.7x12.7  125780
+Added Member To Class: ClassName=1_123456_01 Member=Component E95 SCHUTZLACK-STANDARD BOTTOM  125761
+Added Member To Class: ClassName=1_123456_01 Member=Component E96 SCHUTZLACK-DICKFLÜSSIG BOTTOM  125762
+Added Member To Class: ClassName=1_123456_01 Member=Component E97 SCHUTZLACK-KEIN BOTTOM

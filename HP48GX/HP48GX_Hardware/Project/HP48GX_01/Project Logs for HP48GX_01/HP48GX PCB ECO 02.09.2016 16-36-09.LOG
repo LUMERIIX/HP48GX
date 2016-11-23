@@ -1,0 +1,10 @@
+Added Component: Designator=E92(SCHUTZLACK-DICKFLÜSSIG: TOP)
+Added Component: Designator=E96(SCHUTZLACK-DICKFLÜSSIG: BOTTOM)
+Added Component: Designator=E97(SCHUTZLACK-KEIN BOTTOM)
+Added Pin To Net: NetName=A0 Pin=X4-1
+Added Pin To Net: NetName=A1 Pin=X4-2
+Added Pin To Net: NetName=A2 Pin=X4-3
+Added Pin To Net: NetName=A3 Pin=X4-4
+Added Member To Class: ClassName=1_123456_01 Member=Component E92 SCHUTZLACK-DICKFLÜSSIG TOP  125762
+Added Member To Class: ClassName=1_123456_01 Member=Component E96 SCHUTZLACK-DICKFLÜSSIG BOTTOM  125762
+Added Member To Class: ClassName=1_123456_01 Member=Component E97 SCHUTZLACK-KEIN BOTTOM

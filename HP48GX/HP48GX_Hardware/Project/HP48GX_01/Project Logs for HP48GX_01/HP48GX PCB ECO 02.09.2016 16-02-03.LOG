@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=X?? Old Footprint=XHEAD2R10PR0.5SB New Footprint=XHEAD2R20PR1.27MMSB SMD
+Added Component: Designator=E92(SCHUTZLACK-DICKFLÜSSIG: TOP)
+Added Component: Designator=E95(SCHUTZLACK-STANDARD: BOTTOM)
+Added Component: Designator=E96(SCHUTZLACK-DICKFLÜSSIG: BOTTOM)
+Added Component: Designator=E97(SCHUTZLACK-KEIN BOTTOM)
+Added Member To Class: ClassName=1_123456_01 Member=Component E92 SCHUTZLACK-DICKFLÜSSIG TOP  125762
+Added Member To Class: ClassName=1_123456_01 Member=Component E95 SCHUTZLACK-STANDARD BOTTOM  125761
+Added Member To Class: ClassName=1_123456_01 Member=Component E96 SCHUTZLACK-DICKFLÜSSIG BOTTOM  125762
+Added Member To Class: ClassName=1_123456_01 Member=Component E97 SCHUTZLACK-KEIN BOTTOM

@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=X?? NewDesignator=X2
+Added Component: Designator=X3(XHEAD2R10PR1.27MMSB SMD)
+Added Component: Designator=X4(XHEAD2R10PR1.27MMSB SMD)
+Added Pin To Net: NetName=VBAT Pin=X3-1
+Added Pin To Net: NetName=A9 Pin=X3-2
+Added Pin To Net: NetName=A10 Pin=X3-3
+Added Pin To Net: NetName=A11 Pin=X3-4
+Added Pin To Net: NetName=A12 Pin=X3-5
+Added Pin To Net: NetName=A13 Pin=X3-6
+Added Pin To Net: NetName=A14 Pin=X3-7
+Added Pin To Net: NetName=A15 Pin=X3-8
+Added Pin To Net: NetName=A16 Pin=X3-9
+Added Pin To Net: NetName=A17 Pin=X3-10
+Added Pin To Net: NetName=A4 Pin=X4-8
+Added Pin To Net: NetName=A5 Pin=X4-9
+Added Pin To Net: NetName=ONKEY Pin=X4-10
+Added Member To Class: ClassName=1_123456_01 Member=Component X3 Header 10P
+Added Member To Class: ClassName=1_123456_01 Member=Component X4 Header 10P

@@ -1,0 +1,54 @@
+[OutputDatabaseLinkFile]
+Version=1.1
+[DatabaseLinks]
+ConnectionString=Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\Unterstützung\Vorlagen\PCB_Design\Altium_Designer\Altium_Designer_Library\Parameter Update\Database\ERP_Abfrage_Layout.accdb;Persist Security Info=False
+AddMode=3
+RemoveMode=1
+UpdateMode=2
+ViewMode=0
+LeftQuote=[
+RightQuote=]
+QuoteTableNames=1
+UseTableSchemaName=0
+DefaultColumnType=VARCHAR(255)
+LibraryDatabaseType=Microsoft Access 2007
+LibraryDatabasePath=G:\Unterstützung\Vorlagen\PCB_Design\Altium_Designer\Altium_Designer_Library\Parameter Update\Database\ERP_Abfrage_Layout.accdb
+DatabasePathRelative=0
+TopPanelCollapsed=0
+LastFocusedTable=Altium_Lieferant
+[Table1]
+SchemaName=
+TableName=Altium_Artikel
+Enabled=False
+UserWhere=0
+UserWhereText=
+[Table2]
+SchemaName=
+TableName=Altium_Hersteller
+Enabled=False
+UserWhere=0
+UserWhereText=
+[Table3]
+SchemaName=
+TableName=Altium_Lieferant
+Enabled=True
+UserWhere=0
+UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=ARTNR0=57|ADRESSZEILE10=240|BSTNR0=201
+[Table4]
+SchemaName=
+TableName=Status_Bezeichnung
+Enabled=False
+UserWhere=0
+UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=StatusWert0=80|StatusBezeichnung0=122
+[FieldMap1]
+Options=FieldName=Altium_Lieferant.ARTNR|TableNameOnly=Altium_Lieferant|FieldNameOnly=ARTNR|FieldType=0|ParameterName=Artikelnummer IN-ERP|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap2]
+Options=FieldName=Altium_Lieferant.ADRESSZEILE1|TableNameOnly=Altium_Lieferant|FieldNameOnly=ADRESSZEILE1|FieldType=1|ParameterName=Lieferant|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
+[FieldMap3]
+Options=FieldName=Altium_Lieferant.BSTNR|TableNameOnly=Altium_Lieferant|FieldNameOnly=BSTNR|FieldType=1|ParameterName=Lieferant Best.Nr|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
