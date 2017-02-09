@@ -154,7 +154,7 @@ Disassembly of section .text:
 0000016e <ignoreKey>:
  16e:	80 91 43 01 	lds	r24, 0x0143
  172:	90 91 44 01 	lds	r25, 0x0144
- 176:	84 34       	cpi	r24, 0x44	; 68
+ 176:	83 37       	cpi	r24, 0x73	; 115
  178:	91 05       	cpc	r25, r1
  17a:	b9 f4       	brne	.+46     	; 0x1aa <ignoreKey+0x3c>
  17c:	80 91 47 01 	lds	r24, 0x0147
@@ -421,7 +421,7 @@ Disassembly of section .text:
  3f0:	80 38       	cpi	r24, 0x80	; 128
  3f2:	91 05       	cpc	r25, r1
  3f4:	19 f4       	brne	.+6      	; 0x3fc <KeyPressed+0x3e>
- 3f6:	84 e4       	ldi	r24, 0x44	; 68
+ 3f6:	83 e7       	ldi	r24, 0x73	; 115
  3f8:	90 e0       	ldi	r25, 0x00	; 0
  3fa:	05 c0       	rjmp	.+10     	; 0x406 <KeyPressed+0x48>
  3fc:	80 50       	subi	r24, 0x00	; 0
@@ -548,7 +548,7 @@ Disassembly of section .text:
  526:	89 32       	cpi	r24, 0x29	; 41
  528:	91 05       	cpc	r25, r1
  52a:	19 f0       	breq	.+6      	; 0x532 <main+0xa2>
- 52c:	84 34       	cpi	r24, 0x44	; 68
+ 52c:	83 37       	cpi	r24, 0x73	; 115
  52e:	91 05       	cpc	r25, r1
  530:	21 f4       	brne	.+8      	; 0x53a <main+0xaa>
  532:	10 92 46 01 	sts	0x0146, r1

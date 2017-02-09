@@ -20,7 +20,7 @@
 
 #define ROWS 10
 #define DEBOUNCE_CYCLES 8
-#define TAB2HP  (68) ///F11
+#define TAB2HP  (115) ///F24
 //-------------------------------globale Variablen----------------------------
 
 uchar state = STATE_WAIT;
@@ -88,8 +88,8 @@ uchar ScanCode [10][6] = {{0,5,6,7,8,9},
                           {0,23,24,25,26,27},
                           {0,88,29,28,76,42},
                           {43,22,36,37,38,84},
-                   /*225*/{225,10,33,34,35,85},
-                   /*224*/{224,4,30,31,32,86},
+                          {225,10,33,34,35,85},
+                          {224,4,30,31,32,86},
                           {0,16,39,55,44,87},
                           {41,0,0,0,0,0,}};
 
@@ -173,7 +173,7 @@ void scanMatrix(void)
          else if((~newVal&0x02) && (changedKeys&0x02)) ///A4
         {
             state = STATE_SEND_KEY;
-            keybuild = (ScanCode[activeRowIdx][1]);//A0
+            keybuild = (ScanCode[activeRowIdx][1]);//A4
         }
         else if((~newVal&0x10) && (changedKeys&0x10)) ///A3
         {
@@ -188,7 +188,7 @@ void scanMatrix(void)
         else if((~newVal&0x40) && (changedKeys&0x40)) ///A1
         {
             state = STATE_SEND_KEY;
-            keybuild = (ScanCode[activeRowIdx][4]);//A0
+            keybuild = (ScanCode[activeRowIdx][4]);//A1
         }
         else if((~newVal&0x80) && (changedKeys&0x80)) ///A0
         {
@@ -278,8 +278,6 @@ void Init (void)
     DDRB    = 0b00000001;
     PORTB   = 0b00000000;
 }
-
-
 
 //----------------------Main--------------------------------
 int main(void)
